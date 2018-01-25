@@ -1,0 +1,25 @@
+.login {
+  width: 100%;
+  max-width: 745px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login .login__column {
+  width: 47.5%;
+}
+
+.login__column > img {
+  width: 100%;
+}
+
+.login__column .login__box {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  margin-bottom: 20px;
+}
+
+.login__box.login__box--transparent {
+  background-color: transparent;
+  border: none;
+}
