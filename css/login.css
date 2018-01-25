@@ -3,6 +3,7 @@
   max-width: 745px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .login .login__column {
@@ -19,7 +20,68 @@
   margin-bottom: 20px;
 }
 
+.login__column .login__box {
+  text-align: center;
+}
+
+.login__box .login__appstores {
+  margin-top: 25px;
+}
+
+.login__appstores .login__appstore {
+  height: 35px;
+}
+
+.login__column .login__box {
+  padding: 30px 0;
+}
+
+.login__box .login__link {
+  color: #3897f0;
+}
+
 .login__box.login__box--transparent {
   background-color: transparent;
   border: none;
+  padding: 0;
+}
+
+.login__box .login__logo {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.login__box .login__form {
+  margin-bottom: 20px;
+}
+
+.login__form input {
+  display: block;
+  width: 100%;
+}
+
+.login__box .login__or,
+.login__box .login__link {
+  display: block;
+}
+
+.login__box .login__or {
+  margin-bottom: 35px;
+}
+
+.login__box .login__link {
+  margin-bottom: 27px;
+}
+
+.login__box .login__link--small {
+  margin-bottom: 0;
+}
+
+.login__column .login__box:first-child {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.login__box:nth-child(2) .login__link {
+  display: inline;
 }
