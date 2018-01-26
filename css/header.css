@@ -38,6 +38,12 @@
   padding-left: 10px;
 }
 
+.header__container input:focus {
+  outline: none;
+  border-color: #b2b2b2;
+  background-color: white;
+}
+
 .header__container > * {
   width: 33%;
   display: flex;
