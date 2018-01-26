@@ -2,3 +2,56 @@
   width: 100%;
   max-width: 600px;
 }
+
+.explore .explore__users {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
+}
+
+.explore__users .explore__user {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.explore__users .explore__user:last-child {
+  border: 0;
+}
+
+.explore__user .explore__column {
+  display: flex;
+  align-items: center;
+}
+
+.explore__column .explore__avatar {
+  margin-right: 15px;
+  width: 55px;
+  border-radius: 50%;
+}
+
+.explore__user-data .explore__username {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.explore__column .explore__button {
+  background-color: #3e99ed;
+  border: 0;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.explore__column .explore__button:active,
+.explore__column .explore__button:focus {
+  outline: none;
+}
+
+.explore__column .explore__button:active {
+  opacity: 0.8;
+}

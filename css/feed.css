@@ -7,6 +7,7 @@
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 3px;
+  margin-bottom: 60px;
 }
 
 .photo .photo__header {
