@@ -1,0 +1,25 @@
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .header {
+    margin-bottom: 30px;
+  }
+  .header .header__container {
+    padding: 25px 40px;
+  }
+  .header__container form {
+    display: none;
+  }
+  .explore__users .explore__user {
+    border: 0;
+  }
+  .footer {
+    width: 95%;
+  }
+  .footer,
+  .footer__navigation .footer__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__list .footer__list-item {
+    margin-bottom: 10px;
+  }
+}
