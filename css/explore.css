@@ -45,13 +45,15 @@
   padding: 5px 8px;
   font-size: 14px;
   font-weight: 600;
+  transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+.explore__column .explore__button:active {
+  opacity: 0.1;
+  background-color: red;
 }
 
 .explore__column .explore__button:active,
 .explore__column .explore__button:focus {
   outline: none;
-}
-
-.explore__column .explore__button:active {
-  opacity: 0.8;
 }
