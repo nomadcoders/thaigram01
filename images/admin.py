@@ -4,6 +4,11 @@ from .models import Image, Comment, Like
 
 class ImageAdmin(admin.ModelAdmin):
 
+    ordering = (
+        'caption',
+        'created_at'
+    )
+
     list_display = (
         'location',
         'caption',
