@@ -4,5 +4,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size:14px;
+  font-size: 14px;
+}
+
+main {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
