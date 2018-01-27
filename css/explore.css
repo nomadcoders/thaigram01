@@ -33,7 +33,7 @@
 }
 
 @keyframes potato {
-  from {
+  0% {
     transform: none;
   }
   to {

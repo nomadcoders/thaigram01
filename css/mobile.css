@@ -22,4 +22,22 @@
   .footer__list .footer__list-item {
     margin-bottom: 10px;
   }
+  .feed .photo {
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 0px;
+  }
+  .photo__meta .photo__add-comment {
+    display: none;
+  }
+  .login .login__column:first-child {
+    display: none;
+  }
+  .login .login__column {
+    width: 100%;
+  }
+  .login__column .login__box {
+    background-color: transparent;
+    border: 0;
+  }
 }
