@@ -7,15 +7,9 @@ from django.http import HttpResponse
 def index(request):
     user = request.user
     if user.is_authenticated:
-        return render(request, 'base.html', context={
-            'title': 'Feed',
-            'message': f'Welcome back {user.username}'
-        })
+        return render(request, 'feed.html')
     else:
-        return render(request, 'base.html', context={
-            'title': 'Log In',
-            'message': 'Please log in'
-        })
+        return render(request, 'login.html')
 
 
 def profile(request):

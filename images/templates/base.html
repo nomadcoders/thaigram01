@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>{{title}} | Thaigram</title>
+    <title>{% block title%}{% endblock%} | Thaigram</title>
 
 </head>
 
 <body>
-    {% if user.is_authenticated %}{% include "partials/header.html" %} {% endif %} {{message}} {% include "partials/footer.html"%}
+    {% if user.is_authenticated %}
+        {% include "partials/header.html" %}
+    {% endif %}
+    
+    {% block content %}{% endblock%} 
+    
+    {% include "partials/footer.html"%}
 </body>
 
 </html>
