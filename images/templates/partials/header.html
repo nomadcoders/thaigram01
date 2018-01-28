@@ -2,7 +2,7 @@
 <header class="header">
     <div class="header__container">
         <div class="header__logo">
-            <a href="feed.html">
+            <a href="{% url 'home' %}">
                 <img src="{% static 'images/logo.png' %}" class="header__image">
             </a>
         </div>
@@ -12,7 +12,7 @@
         <nav class="header__navigation">
             <ul class="header__list">
                 <li class="header__list-item">
-                    <a href="explore.html" class="header__link">
+                    <a href="{% url 'explore' %}" class="header__link">
                         <i class="fa fa-compass" aria-hidden="true"></i>
                     </a>
                 </li>
@@ -22,7 +22,7 @@
                     </a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__link">
+                    <a href="{% url 'profile' %}" class="header__link">
                         <i class="fa fa-user-o"></i>
                     </a>
                 </li>
