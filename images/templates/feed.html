@@ -15,7 +15,7 @@
                 <span class="photo__location">{{image.location}}</span>
             </div>
         </header>
-        <img src="{{MEDIA_URL}}/{{image.file}}" class="photo__file">
+        <img src="media/{{image.file}}" class="photo__file">
         <div class="photo__meta">
             <div class="photo__actions">
                 <div class="photo__action-column">
@@ -30,7 +30,7 @@
                     <i class="fa fa-bookmark-o"></i>
                 </span>
             </div>
-            <span class="photo__likes">22324 likes</span>
+            <span class="photo__likes">{{image.like_set.all.count}} likes</span>
             <ul class="photo__comments">
                 <li class="photo__comment">
                     <span class="photo__comment-author">
@@ -38,30 +38,14 @@
                     </span>
                     {{image.caption}}
                 </li>
+                {% for comment in image.comment_set.all %}
                 <li class="photo__comment">
                     <span class="photo__comment-author">
-                        inthetiger
+                        {{comment.created_by.username}}
                     </span>
-                    Wow omg wtf!
+                    {{comment.message}}
                 </li>
-                <li class="photo__comment">
-                    <span class="photo__comment-author">
-                        inthetiger
-                    </span>
-                    Wow omg wtf!
-                </li>
-                <li class="photo__comment">
-                    <span class="photo__comment-author">
-                        inthetiger
-                    </span>
-                    Wow omg wtf!
-                </li>
-                <li class="photo__comment">
-                    <span class="photo__comment-author">
-                        inthetiger
-                    </span>
-                    Wow omg wtf!
-                </li>
+                {% endfor %}
             </ul>
             <span class="photo__date">{{image.created_at}}</span>
             <div class="photo__add-comment">

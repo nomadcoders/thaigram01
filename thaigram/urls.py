@@ -24,4 +24,4 @@ urlpatterns = [
     path('explore', views.explore, name='explore'),
     path('profile', views.profile, name='profile'),
     path('admin/', admin.site.urls),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

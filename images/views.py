@@ -7,6 +7,7 @@ from .models import Image
 def index(request):
     user = request.user
     if user.is_authenticated:
+        print(user.image_set.all())
         all_images = Image.objects.all()
         return render(request, 'feed.html', context={
             'images': all_images
@@ -18,7 +19,7 @@ def index(request):
 def profile(request):
     user = request.user
     if user.is_authenticated:
-        return HttpResponse('You have reached the profile!')
+        return render(request, 'profile.html')
     else:
         return HttpResponse('You have to log in')
 
